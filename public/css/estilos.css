@@ -118,7 +118,59 @@ h2.login-title{
 .register-link p a:hover{
     text-decoration: underline;
 }
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
 
+.modal-content {
+    background: #f0f0f0;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.progress-container {
+    background: #ddd;
+    border-radius: 13px;
+    padding: 3px;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background: linear-gradient(#779c07, #0063b1);
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+} 
+#modal-accept {
+    background: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+ }
+ 
+ #modal-accept:hover {
+    background: #0063b1;
+ }
+ 
+ .modal-content {
+    text-align: center;
+ }
 @media (max-width:1024px){
     .login-box{
         width: 100%;
